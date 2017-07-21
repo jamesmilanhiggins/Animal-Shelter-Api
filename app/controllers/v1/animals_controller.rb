@@ -44,7 +44,6 @@ class V1::AnimalsController < ApplicationController
     length = Animal.all.count
     number = 1 + rand(length);
     @animal = Animal.find(number)
-    # render status: 200, json: { message: "You randomly generated an animal." }
     json_response(@animal)
 
   end
