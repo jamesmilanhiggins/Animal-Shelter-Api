@@ -28,7 +28,7 @@ $ open localhost:3000 in your browser
 
 ## API Endpoints
   * View all animals ["/v1/animals"](https://james-animal-shelter-api.herokuapp.com/v1/animals)
-  ![All Animals](app/assets/images/all_animals.png = 400x400)
+  <img src="app/assets/images/all_animals.png" height="200" />
 
   * View a specific animal ["/v1/animals/:id"](https://james-animal-shelter-api.herokuapp.com/v1/animals/1)
   ![One Animal](app/assets/images/one_animal.png)
