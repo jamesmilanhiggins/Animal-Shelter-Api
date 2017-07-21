@@ -1,9 +1,15 @@
 class V1::AnimalsController < ApplicationController
 
   def index
-    # @animals = Animal.all
-    name = params[:name]
-    @animals = Animal.search_by_name(name)
+    if params[:name]
+      name = params[:name]
+      @animals = Animal.search_by_name(name)
+    elsif params[:RANDOM]
+      random = params[:RANDOM]
+      @animals = Animal.return_random_animal(random)
+    else
+      @animals = Animal.all
+    end
 
     json_response(@animals)
   end
