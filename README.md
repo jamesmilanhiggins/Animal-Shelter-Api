@@ -28,29 +28,29 @@ $ open localhost:3000 in your browser
 
 ## API Endpoints
   * View all animals ["/v1/animals"](https://james-animal-shelter-api.herokuapp.com/v1/animals)
-  <img src="app/assets/images/all_animals.png" height="500" />
+  <img src="app/assets/images/all_animals.png" height="650" />
 
   * View a specific animal ["/v1/animals/:id"](https://james-animal-shelter-api.herokuapp.com/v1/animals/1)
- <img src="aapp/assets/images/one_animal.png" height="500" />
+ <img src="app/assets/images/one_animal.png" height="650" />
  
   * Add a new animal ["/v1/animals"](https://james-animal-shelter-api.herokuapp.com/v1/animals)
-   <img src="app/assets/images/new_animal.png" height="500" />
+   <img src="app/assets/images/new_animal.png" height="650" />
 
   * Edit an animal ["/v1/animals/:id"](https://james-animal-shelter-api.herokuapp.com/v1/animals/1)
-   <img src="aapp/assets/images/updated_animal.png" height="500" />
+   <img src="app/assets/images/updated_animal.png" height="650" />
 
   * Delete an animal ["/v1/animals/:id"](https://james-animal-shelter-api.herokuapp.com/v1/animals/1)
-   <img src="app/assets/images/delete_animal.png" height="500" />
+   <img src="app/assets/images/delete_animal.png" height="650" />
 
 
 ## Custom Endpoints
   * Search Animals by name
   [/v1/animals?name=Shadow](https://james-animal-shelter-api.herokuapp.com/v1/animals?name=Shadow)
-   <img src="aapp/assets/images/search_by_name.png" height="500" />
+   <img src="app/assets/images/search_by_name.png" height="650" />
 
   * View a random Animals
   [/v1/random](https://james-animal-shelter-api.herokuapp.com/v1/random)
-   <img src="pp/assets/images/random.png" height="500" />
+   <img src="app/assets/images/random.png" height="650" />
 
 
 ## Versioning
