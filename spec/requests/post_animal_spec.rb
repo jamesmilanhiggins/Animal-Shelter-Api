@@ -9,7 +9,7 @@ describe "post a animal route", :type => :request do
     expect(JSON.parse(response.body)['name']).to eq('test animal')
   end
 
-#   it 'returns a created status' do
-#     expect(response).to have_http_status(:created)
-#   end
+  it 'returns a created status' do
+    expect(response).to have_http_status(:created)
+  end
 end
