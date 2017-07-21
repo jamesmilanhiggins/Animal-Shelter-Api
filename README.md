@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Serach function example : http://localhost:3000/v1/animals?name=Shadow
