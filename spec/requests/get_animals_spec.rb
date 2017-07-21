@@ -5,7 +5,7 @@ describe 'get animal route', :type => :request do
 
   let!(:animals) { FactoryGirl.create_list(:animal, 20)}
 
-  before { get '/animals'}
+  before { get '/v1/animals'}
 
   it "returns all animals" do
     expect(JSON.parse(response.body).size).to eq(20)
