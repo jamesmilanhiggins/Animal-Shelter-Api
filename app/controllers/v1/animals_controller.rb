@@ -39,6 +39,16 @@ class V1::AnimalsController < ApplicationController
     render status: 200, json: { message: "Your animal has successfully been removed." }
   end
 
+  def random
+    # binding.pry
+    length = Animal.all.count
+    number = 1 + rand(length);
+    @animal = Animal.find(number)
+    # render status: 200, json: { message: "You randomly generated an animal." }
+    json_response(@animal)
+
+  end
+
 
 
   private
