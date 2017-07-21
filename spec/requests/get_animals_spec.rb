@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe 'get animal route', :type => :request do
+  before { Animal.destroy_all }
+
   let!(:animals) { FactoryGirl.create_list(:animal, 20)}
 
   before { get '/animals'}
