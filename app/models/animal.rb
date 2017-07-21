@@ -1,4 +1,4 @@
 class Animal < ApplicationRecord
- validates :type, :name, :presence => true
+ validates :animaltype, :name, :presence => true
 
 end
