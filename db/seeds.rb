@@ -10,7 +10,7 @@ class Seed
   end
 
   def generate_animals
-    20.times do |index|
+    1000.times do |index|
     Animal.create!(
         animaltype: Faker::GameOfThrones.dragon,
         name: Faker::Cat.name
