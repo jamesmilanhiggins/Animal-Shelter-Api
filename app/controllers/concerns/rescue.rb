@@ -12,3 +12,4 @@ module Rescue
       json_response({ message: exception.message }, 422)
     end
   end
+end
