@@ -4,13 +4,9 @@ class V1::AnimalsController < ApplicationController
     if params[:name]
       name = params[:name]
       @animals = Animal.search_by_name(name)
-    elsif params[:RANDOM]
-      random = params[:RANDOM]
-      @animals = Animal.return_random_animal(random)
     else
       @animals = Animal.all
     end
-
     json_response(@animals)
   end
 
@@ -30,7 +26,6 @@ class V1::AnimalsController < ApplicationController
     render status: 200, json: {
      message: "Your animal has successfully been updated."
      }
-
   end
 
   def destroy
@@ -40,22 +35,15 @@ class V1::AnimalsController < ApplicationController
   end
 
   def random
-    # binding.pry
     length = Animal.all.count
     number = 1 + rand(length);
     @animal = Animal.find(number)
     json_response(@animal)
-
   end
 
 
-
   private
-
-
   def animal_params
     params.permit(:animaltype, :name)
- end
-
-
+  end
 end

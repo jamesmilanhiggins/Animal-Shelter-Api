@@ -1,33 +1,77 @@
-# README
+<h1 align="center">
+James' API Practice
+</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _This is an API with FAKER data representing an Animal Shelter's available animals._
 
-Things you may want to cover:
+Visit Live Hosted Site On Heroku [here](https://james-animal-shelter-api.herokuapp.com/v1/animals)
 
-* Ruby version
+#### By _**James Higgins**_
 
-* System dependencies
+## How To Use
+I recommend using the Google Chrome extension [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) to view and play around with this API.
 
-* Configuration
+* _Ensure connection to the Internet_
+* _On a mac using spotlight search, type in terminal_
+* _Once in terminal enter the following commands to clone the file to your desktop and open the repository:_
+```
+$ cd desktop
+$ git clone https://github.com/jamesmilanhiggins/Animal-Shelter-Api
+$ cd Animal-Shelter-Api
+$ bundle
+$ rake db:setup
+$ rails s
+$ open localhost:3000 in your browser
 
-* Database creation
+```
+ or view live site [here](https://james-animal-shelter-api.herokuapp.com/v1/animals)
 
-* Database initialization
+## API Endpoints
+  * View all animals ["/v1/animals"](https://james-animal-shelter-api.herokuapp.com/v1/animals)
+  ![All Animals](app/assets/images/all_animals.png)
 
-* How to run the test suite
+  * View a specific animal ["/v1/animals/:id"](https://james-animal-shelter-api.herokuapp.com/v1/animals/1)
+  ![One Animal](app/assets/images/one_animal.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+  * Add a new animal ["/v1/animals"](https://james-animal-shelter-api.herokuapp.com/v1/animals)
+  ![New Animal](app/assets/images/new_animal.png)
 
-* Deployment instructions
+  * Edit an animal ["/v1/animals/:id"](https://james-animal-shelter-api.herokuapp.com/v1/animals/1)
+  ![Edit Animal](app/assets/images/updated_animal.png)
 
-* ...
-
-Custom Endpoints
-Serach function example : http://localhost:3000/v1/animals?name=Shadow
-
-
-/random is the route
+  * Delete an animal ["/v1/animals/:id"](https://james-animal-shelter-api.herokuapp.com/v1/animals/1)
+  ![Delete Animal](app/assets/images/delete_animal.png)
 
 
-Version 1
+## Custom Endpoints
+  * Search Animals by name
+  [/v1/animals?name=Shadow](https://james-animal-shelter-api.herokuapp.com/v1/animals?name=Shadow)
+  ![Search Animals](app/assets/images/search_by_name.png)
+
+  * View a random Animals
+  [/v1/random](https://james-animal-shelter-api.herokuapp.com/v1/random)
+  ![Random Animal](app/assets/images/random.png)
+
+
+## Versioning
+  * This API is currently in Version 1.0.0 aka V1
+
+## Known Bugs
+
+ * There are no known bugs at this time
+
+
+## Support and contact details
+
+ _Please contact James Higgins at James.Milan.Higgins@gmail.com if you have any questions._
+
+## Technologies Used
+
+ * Ruby
+ * Rails
+
+### License
+
+ *This software is licensed under MIT license.*
+
+Copyright (c) 2017 **_James Higgins_**
